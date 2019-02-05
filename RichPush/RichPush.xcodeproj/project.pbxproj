@@ -13,7 +13,33 @@
 		51EFE18E2209C4B000192134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51EFE18C2209C4B000192134 /* Main.storyboard */; };
 		51EFE1902209C4B100192134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51EFE18F2209C4B100192134 /* Assets.xcassets */; };
 		51EFE1932209C4B100192134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51EFE1912209C4B100192134 /* LaunchScreen.storyboard */; };
+		51EFE1A12209CB3B00192134 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EFE1A02209CB3B00192134 /* NotificationService.swift */; };
+		51EFE1A52209CB3B00192134 /* RichPushNotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 51EFE19E2209CB3B00192134 /* RichPushNotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		51EFE1A32209CB3B00192134 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51EFE17D2209C4B000192134 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51EFE19D2209CB3B00192134;
+			remoteInfo = RichPushNotificationService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		51EFE1A92209CB3B00192134 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				51EFE1A52209CB3B00192134 /* RichPushNotificationService.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		20E3E5D0B2175837D7823694 /* Pods_RichPush.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RichPush.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +50,10 @@
 		51EFE18F2209C4B100192134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51EFE1922209C4B100192134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51EFE1942209C4B100192134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51EFE19E2209CB3B00192134 /* RichPushNotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RichPushNotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		51EFE1A02209CB3B00192134 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		51EFE1A22209CB3B00192134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51EFE3D12209D21800192134 /* RichPush.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RichPush.entitlements; sourceTree = "<group>"; };
 		A7AD330F9171441FBD537F68 /* Pods-RichPush.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichPush.release.xcconfig"; path = "Pods/Target Support Files/Pods-RichPush/Pods-RichPush.release.xcconfig"; sourceTree = "<group>"; };
 		FBB915AD59F8EB7D93A37CB5 /* Pods-RichPush.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichPush.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RichPush/Pods-RichPush.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -34,6 +64,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2308DD497CA4FB064A4C7BF3 /* Pods_RichPush.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51EFE19B2209CB3B00192134 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				51EFE1872209C4B000192134 /* RichPush */,
+				51EFE19F2209CB3B00192134 /* RichPushNotificationService */,
 				51EFE1862209C4B000192134 /* Products */,
 				3D173FDB4ECC26A6875763B8 /* Pods */,
 				02C4369D0E1119ABE524D618 /* Frameworks */,
@@ -71,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				51EFE1852209C4B000192134 /* RichPush.app */,
+				51EFE19E2209CB3B00192134 /* RichPushNotificationService.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +117,7 @@
 		51EFE1872209C4B000192134 /* RichPush */ = {
 			isa = PBXGroup;
 			children = (
+				51EFE3D12209D21800192134 /* RichPush.entitlements */,
 				51EFE1882209C4B000192134 /* AppDelegate.swift */,
 				51EFE18A2209C4B000192134 /* ViewController.swift */,
 				51EFE18C2209C4B000192134 /* Main.storyboard */,
@@ -86,6 +126,15 @@
 				51EFE1942209C4B100192134 /* Info.plist */,
 			);
 			path = RichPush;
+			sourceTree = "<group>";
+		};
+		51EFE19F2209CB3B00192134 /* RichPushNotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				51EFE1A02209CB3B00192134 /* NotificationService.swift */,
+				51EFE1A22209CB3B00192134 /* Info.plist */,
+			);
+			path = RichPushNotificationService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,15 +149,34 @@
 				51EFE1822209C4B000192134 /* Frameworks */,
 				51EFE1832209C4B000192134 /* Resources */,
 				4DBF69067823FA0B5499AA13 /* [CP] Embed Pods Frameworks */,
+				51EFE1A92209CB3B00192134 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				51EFE1A42209CB3B00192134 /* PBXTargetDependency */,
 			);
 			name = RichPush;
 			productName = RichPush;
 			productReference = 51EFE1852209C4B000192134 /* RichPush.app */;
 			productType = "com.apple.product-type.application";
+		};
+		51EFE19D2209CB3B00192134 /* RichPushNotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51EFE1A82209CB3B00192134 /* Build configuration list for PBXNativeTarget "RichPushNotificationService" */;
+			buildPhases = (
+				51EFE19A2209CB3B00192134 /* Sources */,
+				51EFE19B2209CB3B00192134 /* Frameworks */,
+				51EFE19C2209CB3B00192134 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RichPushNotificationService;
+			productName = RichPushNotificationService;
+			productReference = 51EFE19E2209CB3B00192134 /* RichPushNotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -121,6 +189,17 @@
 				ORGANIZATIONNAME = "Christopher Batin";
 				TargetAttributes = {
 					51EFE1842209C4B000192134 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					51EFE19D2209CB3B00192134 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -139,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				51EFE1842209C4B000192134 /* RichPush */,
+				51EFE19D2209CB3B00192134 /* RichPushNotificationService */,
 			);
 		};
 /* End PBXProject section */
@@ -151,6 +231,13 @@
 				51EFE1932209C4B100192134 /* LaunchScreen.storyboard in Resources */,
 				51EFE1902209C4B100192134 /* Assets.xcassets in Resources */,
 				51EFE18E2209C4B000192134 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51EFE19C2209CB3B00192134 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +300,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51EFE19A2209CB3B00192134 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51EFE1A12209CB3B00192134 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		51EFE1A42209CB3B00192134 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51EFE19D2209CB3B00192134 /* RichPushNotificationService */;
+			targetProxy = 51EFE1A32209CB3B00192134 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		51EFE18C2209C4B000192134 /* Main.storyboard */ = {
@@ -355,7 +458,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FBB915AD59F8EB7D93A37CB5 /* Pods-RichPush.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RichPush/RichPush.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8832U97EJ9;
 				INFOPLIST_FILE = RichPush/Info.plist;
@@ -374,7 +479,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A7AD330F9171441FBD537F68 /* Pods-RichPush.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RichPush/RichPush.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8832U97EJ9;
 				INFOPLIST_FILE = RichPush/Info.plist;
@@ -384,6 +491,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.uk.cjapps.RichPush;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		51EFE1A62209CB3B00192134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8832U97EJ9;
+				INFOPLIST_FILE = RichPushNotificationService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.cjapps.RichPush.RichPushNotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		51EFE1A72209CB3B00192134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8832U97EJ9;
+				INFOPLIST_FILE = RichPushNotificationService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.cjapps.RichPush.RichPushNotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -406,6 +551,15 @@
 			buildConfigurations = (
 				51EFE1982209C4B100192134 /* Debug */,
 				51EFE1992209C4B100192134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51EFE1A82209CB3B00192134 /* Build configuration list for PBXNativeTarget "RichPushNotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51EFE1A62209CB3B00192134 /* Debug */,
+				51EFE1A72209CB3B00192134 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

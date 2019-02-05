@@ -25,7 +25,7 @@ struct PushContent: Content {
 class PushNotificationService {
     // 6
     class func send(content: PushContent) throws {
-        let pushNotifications = PushNotifications(instanceId: "YOUR_INSTANCE_ID" , secretKey:"YOUR_SECRET_KEY")
+        let pushNotifications = PushNotifications(instanceId: "9f9818f2-67e5-41d3-90ea-53efe135cccc" , secretKey:"62055D2E66DD6343408FD5F6DF18E83EE7ECC903ED03327DB89044B15277A935")
         let interests = ["general"]
         let publishRequest = [
             "apns": [
