@@ -1,6 +1,6 @@
 # Rich Notifications Pusher Beams
 
-An example project that accompanies my tutorial on using Getting started with vapor and Chatkit.
+An example project that accompanies my tutorial on using rich notifications with Pusher Beams
 
 Tutorial Part 1: https://pusher.com/tutorials/rich-notifications-vapor-part-1
 
