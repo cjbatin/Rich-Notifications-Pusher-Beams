@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2308DD497CA4FB064A4C7BF3 /* Pods_RichPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E3E5D0B2175837D7823694 /* Pods_RichPush.framework */; };
 		51EFE1892209C4B000192134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EFE1882209C4B000192134 /* AppDelegate.swift */; };
 		51EFE18B2209C4B000192134 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EFE18A2209C4B000192134 /* ViewController.swift */; };
 		51EFE18E2209C4B000192134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51EFE18C2209C4B000192134 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20E3E5D0B2175837D7823694 /* Pods_RichPush.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RichPush.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51EFE1852209C4B000192134 /* RichPush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RichPush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51EFE1882209C4B000192134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51EFE18A2209C4B000192134 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		51EFE18F2209C4B100192134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51EFE1922209C4B100192134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51EFE1942209C4B100192134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7AD330F9171441FBD537F68 /* Pods-RichPush.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichPush.release.xcconfig"; path = "Pods/Target Support Files/Pods-RichPush/Pods-RichPush.release.xcconfig"; sourceTree = "<group>"; };
+		FBB915AD59F8EB7D93A37CB5 /* Pods-RichPush.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichPush.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RichPush/Pods-RichPush.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2308DD497CA4FB064A4C7BF3 /* Pods_RichPush.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02C4369D0E1119ABE524D618 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20E3E5D0B2175837D7823694 /* Pods_RichPush.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D173FDB4ECC26A6875763B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBB915AD59F8EB7D93A37CB5 /* Pods-RichPush.debug.xcconfig */,
+				A7AD330F9171441FBD537F68 /* Pods-RichPush.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		51EFE17C2209C4B000192134 = {
 			isa = PBXGroup;
 			children = (
 				51EFE1872209C4B000192134 /* RichPush */,
 				51EFE1862209C4B000192134 /* Products */,
+				3D173FDB4ECC26A6875763B8 /* Pods */,
+				02C4369D0E1119ABE524D618 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51EFE1972209C4B100192134 /* Build configuration list for PBXNativeTarget "RichPush" */;
 			buildPhases = (
+				7AB15C2FC08EC99168A22C3E /* [CP] Check Pods Manifest.lock */,
 				51EFE1812209C4B000192134 /* Sources */,
 				51EFE1822209C4B000192134 /* Frameworks */,
 				51EFE1832209C4B000192134 /* Resources */,
+				4DBF69067823FA0B5499AA13 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DBF69067823FA0B5499AA13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RichPush/Pods-RichPush-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PushNotifications/PushNotifications.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PushNotifications.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RichPush/Pods-RichPush-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AB15C2FC08EC99168A22C3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RichPush-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		51EFE1812209C4B000192134 /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		51EFE1982209C4B100192134 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBB915AD59F8EB7D93A37CB5 /* Pods-RichPush.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +372,7 @@
 		};
 		51EFE1992209C4B100192134 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7AD330F9171441FBD537F68 /* Pods-RichPush.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+framework module Pods_RichPush {
+  umbrella header "Pods-RichPush-umbrella.h"
+
+  export *
+  module * { export * }
+}
