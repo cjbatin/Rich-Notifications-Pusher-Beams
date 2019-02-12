@@ -5,12 +5,8 @@ import PushNotifications
 public func routes(_ router: Router) throws {
     // 2
     router.post(PushContent.self, at: "push/") { req, data -> String in
-        do {
-            try PushNotificationService.send(content: data)
-            return "Push Success"
-        } catch {
-            return "Push Failed"
-        }
+        PushNotificationService.send(content: data)
+        return "Push Success"
     }
 }
 
@@ -24,7 +20,7 @@ struct PushContent: Content {
 //5
 class PushNotificationService {
     // 6
-    class func send(content: PushContent) throws {
+    class func send(content: PushContent) {
         let pushNotifications = PushNotifications(instanceId: "9f9818f2-67e5-41d3-90ea-53efe135cccc" , secretKey:"62055D2E66DD6343408FD5F6DF18E83EE7ECC903ED03327DB89044B15277A935")
         let interests = ["general"]
         let publishRequest = [
@@ -42,7 +38,7 @@ class PushNotificationService {
                 ]
             ]
         ]
-        try pushNotifications.publish(interests, publishRequest, completion: { publishID in
+        pushNotifications.publishToInterests(interests, publishRequest, completion: { publishID in
             print("Published \(publishID)")
         })
     }
